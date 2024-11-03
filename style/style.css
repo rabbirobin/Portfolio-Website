@@ -15,10 +15,22 @@ body {
 
 .top-banner {
     background-image: url('../images/bg1.png');
-    background-size: 100px;
-    background: no-repeat;
-    height: 500px;
+    background-size: 5%;
+    background-repeat: no-repeat;
+    height: auto;
     
+}
+.top-banner::after {
+    content: "" ;
+    display: table;
+    clear: both;
+}
+.middle-banner {
+    background-image: url('../images/bg2.png');
+    background-size: 5%;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: auto;
 }
 
 .half-w {
@@ -62,6 +74,12 @@ li {
     display: table;
     clear: both;
 
+}
+
+.bottom-banner::before {
+    content: "" ;
+    display: table;
+    clear: both;
 }
 
 
